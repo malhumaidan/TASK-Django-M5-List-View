@@ -21,5 +21,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("flights/", FlightListView.as_view(), name="flights-list"),
     path("bookings/", BookingsListView.as_view(), name="bookings-list"),
-    path("manage/bookings/<int:object_id>/", EditBookingsView.as_view(), name="manage-bookings"),
+    path("bookings/<int:object_id>/", EditBookingsView.as_view(), name="manage-bookings"),
 ]
